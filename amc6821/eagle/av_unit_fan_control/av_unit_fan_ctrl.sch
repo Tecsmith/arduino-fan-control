@@ -2696,7 +2696,7 @@ Source: Thomas &amp; Betts Electronic Interconnects Eiropean Edition 1998</descr
 <wire x1="190.5" y1="45.72" x2="190.5" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="N$12" class="0">
 <segment>
 <pinref part="R21" gate="G$1" pin="2"/>
 <pinref part="PWR" gate="G$1" pin="C"/>
