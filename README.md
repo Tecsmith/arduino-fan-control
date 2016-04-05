@@ -19,4 +19,10 @@ Features
 * Works on both 3.3V and 5V variants of Arduino (Due or Leonardo)
 * 1x remote Temperature measure headers per fan (thermal diodes not included)
 
-**(V)(;,,;)(V)**
+![3D Model](docs/model.png)
+
+![Eagle Schematic](docs/schmtc.png)
+
+![Eagle Board Layout](docs/board.png)
+
+-> ★ <-
