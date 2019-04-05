@@ -1,6 +1,8 @@
 Arduino Fan Control Module
 ==========================
 
+<img src="docs/deprecated.svg" style="width:100%" />
+
 About
 -----
 
@@ -8,7 +10,7 @@ All electronics projects have the potential to generate excessive heat.
 Fans are one of the most common methods for thermal management, but can also add significant power consumption and noise.
 Having a fan state/speed controlled by temperature levels can reduce these, but having the Arduino control these independantly adds complexity to the project.
 
-This project is a colection of modules that allow you to add fans to your Arduino project, and automate the fan speed/state by removing the requirement for the Arduino project to manage them in real-time, yet give you the ability to do so.
+This project is a collection of modules that allow you to add fans to your Arduino project, and automate the fan speed/state by removing the requirement for the Arduino project to manage them in real-time, yet give you the ability to do so.
 
 Features
 --------
@@ -25,4 +27,4 @@ Features
 
 ![Eagle Board Layout](docs/board.png)
 
--> ★ <-
+<p align="center">★</p>
