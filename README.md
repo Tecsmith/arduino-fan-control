@@ -1,30 +1,57 @@
-Arduino Fan Control Module
-==========================
+Qwiic Fan Control Module
+========================
 
-<img src="docs/deprecated.svg" style="width:100%" />
+Visit the project website at: [tecsmith.github.io/arduino-fan-control-v2](https://tecsmith.github.io/arduino-fan-control-v2/)
+
+Shortcuts to specific boards:
+
+| Board | URL |
+|---|---|
+| [ESP-01 Qwiic Development Board](https://tecsmith.github.io/arduino-fan-control-v2/esp-01-qwiic-devbrd.html) | [`c1k.it/esp1`](http://c1k.it/esp1) |
+| [AMC6821 Breakout Board](https://tecsmith.github.io/arduino-fan-control-v2/amc6821-breakout.html) |  [`c1k.it/amc6`](http://c1k.it/amc6) |
 
 About
 -----
 
-All electronics projects have the potential to generate excessive heat.
-Fans are one of the most common methods for thermal management, but can also add significant power consumption and noise.
-Having a fan state/speed controlled by temperature levels can reduce these, but having the Arduino control these independantly adds complexity to the project.
+Thermal control is often arbitrarily implemented in electronics projects – adoption of fans for heat management is often done without consideration for power consumption or acoustic noise.
 
-This project is a collection of modules that allow you to add fans to your Arduino project, and automate the fan speed/state by removing the requirement for the Arduino project to manage them in real-time, yet give you the ability to do so.
+Leveraging the Texas Instruments AMC6821 chip, this module adds an intelligent temperature monitor and pulse-width modulation (PWM) fan controller to a fan. It is designed for noise-sensitive or power-sensitive applications that require active system cooling. Using a PWM signal, this device simultaneously drives a fan, monitors remote sensor diode temperatures, and measures/controls the fan speed so that it operates with minimal acoustic noise at the lowest possible speed.
 
-Features
---------
+This project is an Open Source Hardware (OSH) project and is based on [SparkFun's Qwiic](https://www.sparkfun.com/qwiic) I<sup>2</sup>C connectors and can be integrated into many 3.3V based MCU's.
 
-* Managed by I2C communication, so can be used in other mini-boards like the Raspberry Pi
-* Controls 1 to 4 5V or 12V fans, either 3-wire or 4-wire (support for both) using PWM
-	* Default to 4-wire, but add through-hole or jumpers for MOSFET to control 3-wire
-* Works on both 3.3V and 5V variants of Arduino (Due or Leonardo)
-* 1x remote Temperature measure headers per fan (thermal diodes not included)
 
-![3D Model](docs/model.png)
+AMC6821: Intelligent temperature monitor and pulse-width modulation fan controller
+-------------------------------------------------------------------------------
 
-![Eagle Schematic](docs/schmtc.png)
+![AMC6821](docs/img/amc6821.png)
 
-![Eagle Board Layout](docs/board.png)
+The AMC6821 is an intelligent temperature monitor and pulse-width modulation (PWM) fan controller. It is designed for noise-sensitive or power-sensitive applications that require active system cooling. Using a low-frequency or a high-frequency PWM signal, this device can simultaneously drive a fan, monitor remote sensor diode temperatures, and measure and control the fan speed so that it operates with minimal acoustic noise at the lowest possible speed.
+
+The AMC6821 has three fan control modes: *Auto Temperature-Fan* mode, *Software-RPM* mode, and *Software-DCY* mode. Each mode controls the fan speed by changing the duty cycle of a PWM output.
+
+- **Auto Temperature-Fan** mode is an intelligent, closed-loop control that optimizes fan speed according to user-defined parameters. This mode allows the AMC6821 to run as a stand-alone device without CPU intervention; the fan can continue to be controlled (based on temperature measurements) even if the CPU or system locks up.
+
+- **Software-RPM** mode is a second closed-loop control. In this mode, the AMC6821 adjusts the PWM output to maintain a consistent fan speed at a user-specified target value; that is, the device functions as a fan speed regulator. Software-RPM mode can also be used to allow the AMC6821 to operate as a stand-alone device.
+
+- **Software-DCY** is the third mode and is open-loop. In Software-DCY mode, the PWM duty cycle is set directly by the value written to the device.
+
+The AMC6821 has a programmable SMBALERT output to indicate error conditions and a dedicated FAN-FAULT output to indicate fan failure. The THERM pin is a fail-safe output for over-temperature conditions that can be used to throttle a CPU clock. Additionally, the OVR pin indicates the over-temperature limit as well. All of the alarm thresholds are set through the device registers. The AMC6821 is available in a QSOP-16 package.
+
+
+Project Features
+----------------
+
+- Designed to be an inline series add-on for existing fan implementations.
+- Can be powered from 12V and/or 5V power sources. _(Dependant on Fan required operational voltage.)_
+- Support most fan types, 5V~ and 12V
+  * 4-wire _(Tachometer + PWM)_
+  * 3-wire _(Tachometer Sensor)~_
+  * 3-wire _(Locked Rotor Sensor)~_
+  * 2-wire~
+- Can be run as standalone module.
+- Can be chained for up to 9 fans, depending on I<sup>2</sup>C addresses set at A0 and A1 pins.
+- Both Qwiic and generic I<sup>2</sup>C headers for communication with 3.3V based MCU boards.
+
+_ ~ = with add-on MOSFET _
 
 <p align="center">★</p>
