@@ -11,7 +11,7 @@
 
 AMC6821 based Fan Control Module with Qwiic connectors for integration into 3.3V MCU projects.
 
-GitHub repository at [Tecsmith/arduino-fan-control-v2](https://github.com/Tecsmith/arduino-fan-control-v2)
+GitHub repository at [Tecsmith/arduino-fan-control](https://github.com/Tecsmith/arduino-fan-control)
 
 ## Features / Specifications
 
@@ -180,9 +180,9 @@ As viewed from top:
 ## Manufacturing
 
 * Schematic print: [amc6821-breakout-v2.3.pdf](amc6821-breakout-v2.3.pdf)
-* Schematic source (in EAGLE): [Tecsmith/arduino-fan-control-v2/EAGLE/amc6821-breakout-v2.3.sch](https://github.com/Tecsmith/arduino-fan-control-v2/blob/master/EAGLE/amc6821-breakout-v2.3.sch)
-* PCB design (in EAGLE): [Tecsmith/arduino-fan-control-v2/EAGLE/amc6821-breakout-v2.3.brd](https://github.com/Tecsmith/arduino-fan-control-v2/blob/master/EAGLE/amc6821-breakout-v2.3.brd)
-* GERBER files: [Tecsmith/arduino-fan-control-v2/GERBER](https://github.com/Tecsmith/arduino-fan-control-v2/tree/master/GERBER)
+* Schematic source (in EAGLE): [Tecsmith/arduino-fan-control/EAGLE/amc6821-breakout-v2.3.sch](https://github.com/Tecsmith/arduino-fan-control/blob/master/EAGLE/amc6821-breakout-v2.3.sch)
+* PCB design (in EAGLE): [Tecsmith/arduino-fan-control/EAGLE/amc6821-breakout-v2.3.brd](https://github.com/Tecsmith/arduino-fan-control/blob/master/EAGLE/amc6821-breakout-v2.3.brd)
+* GERBER files: [Tecsmith/arduino-fan-control/GERBER](https://github.com/Tecsmith/arduino-fan-control/tree/master/GERBER)
 
 
 |              Top             |             Bottom           |
@@ -198,7 +198,7 @@ As viewed from top:
 
 Currently under development ... refer to:
 
-* PlatfromIO examples: [Tecsmith/arduino-fan-control-v2/PlatformIO](https://github.com/Tecsmith/arduino-fan-control-v2/tree/master/PlatformIO)
+* PlatfromIO examples: [Tecsmith/arduino-fan-control/PlatformIO](https://github.com/Tecsmith/arduino-fan-control/tree/master/PlatformIO)
 
 
 ----------

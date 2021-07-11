@@ -15,10 +15,10 @@ AMC6821 based Fan Control Module with Qwiic connectors for integration into 3.3V
 
 | &#8505; | URL |
 |--------:|-----|
-| Project website | [tecsmith.github.io/arduino-fan-control-v2](https://tecsmith.github.io/arduino-fan-control-v2/) |
+| Project website | [tecsmith.github.io/arduino-fan-control](https://tecsmith.github.io/arduino-fan-control/) |
 | Quick link | [`c1k.it/amc6`](http://c1k.it/amc6) |
-| Github EAGLE-CAD Source | https://github.com/Tecsmith/arduino-fan-control-v2/tree/master/EAGLE |
-| Github PlatformIO Source | https://github.com/Tecsmith/arduino-fan-control-v2/tree/master/PLatformIO |
+| Github EAGLE-CAD Source | https://github.com/Tecsmith/arduino-fan-control/tree/master/EAGLE |
+| Github PlatformIO Source | https://github.com/Tecsmith/arduino-fan-control/tree/master/PLatformIO |
 
 
 

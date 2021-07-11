@@ -1,9 +1,0 @@
-[submodule "Arduino_Pro_Mini_328"]
-	path = vendor/Arduino_Pro_Mini_328
-	url = https://github.com/sparkfun/Arduino_Pro_Mini_328
-[submodule "Pro_Micro"]
-	path = vendor/Pro_Micro
-	url = https://github.com/sparkfun/Pro_Micro
-[submodule "cactus-micro-r2"]
-	path = vendor/cactus-micro-r2
-	url = https://github.com/AprilBrother/cactus-micro-r2
