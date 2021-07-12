@@ -38,13 +38,15 @@ This project is an Open Source Hardware (OSH) project and is based on [SparkFun'
 
 The AMC6821 is an intelligent temperature monitor and pulse-width modulation (PWM) fan controller. It is designed for noise-sensitive or power-sensitive applications that require active system cooling. Using a low-frequency or a high-frequency PWM signal, this device can simultaneously drive a fan, monitor remote sensor diode temperatures, and measure and control the fan speed so that it operates with minimal acoustic noise at the lowest possible speed.
 
-The AMC6821 has three fan control modes: *Auto Temperature-Fan* mode, *Software-RPM* mode, and *Software-DCY* mode. Each mode controls the fan speed by changing the duty cycle of a PWM output.
+The AMC6821 has four fan control modes: *Auto Temperature-Fan* mode, *Software-RPM* mode, *Software-DCY* mode, and *Maximum fast-speed calculated control* mode.  Each mode controls the fan speed by changing the duty cycle of a PWM output.
 
 - <u>**Auto Temperature-Fan**</u> mode is an intelligent, closed-loop control that optimizes fan speed according to user-defined parameters. This mode allows the AMC6821 to run as a stand-alone device without CPU intervention; the fan can continue to be controlled (based on temperature measurements) even if the CPU or system locks up.
 
 - <u>**Software-RPM**</u> mode is a second closed-loop control. In this mode, the AMC6821 adjusts the PWM output to maintain a consistent fan speed at a user-specified target value; that is, the device functions as a fan speed regulator. Software-RPM mode can also be used to allow the AMC6821 to operate as a stand-alone device.
 
-- <u>**Software-DCY**</u> is the third mode and is open-loop. In Software-DCY mode, the PWM duty cycle is set directly by the value written to the device.
+- <u>**Software-DCY**</u> mode is the third mode and is open-loop. In Software-DCY mode, the PWM duty cycle is set directly by the value written to the device.
+
+- <u>**Maximum fast-speed calculated control**</u> mode.
 
 The AMC6821 also has a programmable `SMBALERT` output to indicate error conditions and a dedicated `FAN-FAULT` output to indicate fan failure. The `THERM` pin is a fail-safe output for over-temperature conditions that can be used to throttle a CPU clock. Additionally, the `OVR` pin indicates the over-temperature limit as well. All of the alarm thresholds are set through the device registers. The AMC6821 is available in a QSOP-16 package.
 
@@ -62,7 +64,7 @@ The AMC6821 also has a programmable `SMBALERT` output to indicate error conditio
 - Can be chained for up to 9 fans, depending on I<sup>2</sup>C addresses set at A0 and A1 pins.
 - Both Qwiic and generic I<sup>2</sup>C headers for communication with 3.3V based MCU boards.
 
-_ ~ = with add-on MOSFET _
+> *~ = with add-on MOSFET*
 
 
 
