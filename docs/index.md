@@ -1,13 +1,5 @@
 # Qwiic Fan Control Module
 
------
-
-| **&#9888; WARNING &#9888;** |
-|:---------------------------:|
-| The v2.3 design does not work.  There is a flaw in the PWM design that I cannot resolve yet. |
-
------
-
 
 AMC6821 based Fan Control Module with Qwiic connectors for integration into 3.3V MCU projects.
 
@@ -42,8 +34,38 @@ GitHub repository at [Tecsmith/arduino-fan-control](https://github.com/Tecsmith/
   * <s>can be isolated (cut JP5 and JP6) for BYO sensor</s>
   * <s>can be cut out for remote installation (use rotary cutter along drill holes)</s>
 
+> This project contains 2 PCB boards:
+> * AMC6821 Breakout Board
+> * Fan Host Board *(supports both the above board and the [Adafruit EMC2101 Breakout Board](https://www.adafruit.com/product/4808))*
+
+
 ----------
 
+## AMC6821 Breakout Board
+
+
+| Top | Bottom |
+|:---:|:------:|
+| <img src="img/amc6-bo-t.png" height="300" width="405"> | <img src="img/amc6-bo-b.png" height="300" width="405"> |
+
+Files:
+* Schematic: [`amc6821-breakout-v3.0`](amc6821-breakout-v3.0.pdf)
+
+
+----------
+
+## Fan Host Board
+
+| Top / Bottom |
+|:---:|
+| <img src="img/fanctrl-t.png" height="300" width="540"> |
+| <img src="img/fanctrl-b.png" height="300" width="540"> |
+
+Files:
+* Schematic: [`fan-host-board-v1.0`](fan-host-board-v1.0.pdf)
+
+
+----------
 
 ## Source Code
 
@@ -51,6 +73,7 @@ Currently under development ... refer to:
 
 * PlatfromIO examples: [Tecsmith/arduino-fan-control/PlatformIO](https://github.com/Tecsmith/arduino-fan-control/tree/master/PlatformIO)
 * AMC6821 Library: [Tecsmith/Tecsmith_AMC6821](https://github.com/Tecsmith/Tecsmith_AMC6821)
+
 
 ----------
 <p align="center" style="color:#069">★</p>
