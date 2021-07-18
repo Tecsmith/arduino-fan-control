@@ -1,13 +1,5 @@
 # Qwiic Fan Control Module
 
------
-
-| **&#9888; WARNING &#9888;** |
-|:---------------------------:|
-| The v2.3 design does not work.  There is a flaw in the PWM design that I cannot resolve yet. |
-
------
-
 - This is the **EAGLE** *PCB* design project
 - For the **Arduino** *code* library please see [Tecsmith](https://github.com/Tecsmith)/[Tecsmith_AMC6821](https://github.com/Tecsmith/Tecsmith_AMC6821)
 
@@ -18,7 +10,7 @@ AMC6821 based Fan Control Module with Qwiic connectors for integration into 3.3V
 | Project website | [tecsmith.github.io/arduino-fan-control](https://tecsmith.github.io/arduino-fan-control/) |
 | Quick link | [`c1k.it/amc6`](http://c1k.it/amc6) |
 | Github EAGLE-CAD Source | https://github.com/Tecsmith/arduino-fan-control/tree/master/EAGLE |
-| Github PlatformIO Source | https://github.com/Tecsmith/arduino-fan-control/tree/master/PLatformIO |
+| Github PlatformIO Source | https://github.com/Tecsmith/arduino-fan-control/tree/master/PlatformIO |
 
 
 
