@@ -98,7 +98,7 @@ This project contains 2 PCB boards:
 
 #### LED (JP4) - Power LED
 
-| LED (JP5) | LED function                             |
+| LED (JP4) | LED function                             |
 |:---------:|:-----------------------------------------|
 |   Tied    | LED active to show power state *&#9734;* |
 |   Cut     | Power LED disabled                       |

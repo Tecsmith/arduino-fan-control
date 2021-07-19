@@ -12819,7 +12819,7 @@ round, layers 1 + 16 + 21 + 39 + 49</description>
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="TRANS_NPN" device="-MMBTA42" value="2N3904"/>
 <part name="D4" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN"/>
 <part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805" value="1K"/>
-<part name="JP5" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
+<part name="JP4" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="U$1" library="VinoRodrigues_Custom_Eagle" deviceset="TECSMITH-LOGO" device=""/>
 <part name="U$4" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.5"/>
@@ -12932,7 +12932,7 @@ round, layers 1 + 16 + 21 + 39 + 49</description>
 <attribute name="NAME" x="227.076" y="50.8" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="230.124" y="50.8" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="JP5" gate="G$1" x="228.6" y="63.5" smashed="yes" rot="R90">
+<instance part="JP4" gate="G$1" x="228.6" y="63.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="226.06" y="60.96" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -13096,7 +13096,7 @@ round, layers 1 + 16 + 21 + 39 + 49</description>
 </segment>
 <segment>
 <pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
-<pinref part="JP5" gate="G$1" pin="2"/>
+<pinref part="JP4" gate="G$1" pin="2"/>
 <wire x1="228.6" y1="71.12" x2="228.6" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -13471,7 +13471,7 @@ round, layers 1 + 16 + 21 + 39 + 49</description>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="JP5" gate="G$1" pin="1"/>
+<pinref part="JP4" gate="G$1" pin="1"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="228.6" y1="55.88" x2="228.6" y2="58.42" width="0.1524" layer="91"/>
 </segment>
