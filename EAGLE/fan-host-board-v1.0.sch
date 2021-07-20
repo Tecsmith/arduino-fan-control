@@ -10416,7 +10416,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$10" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.5"/>
 <part name="U$11" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.5"/>
 <part name="U$12" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.5"/>
-<part name="U$2" library="VinoRodrigues_Custom_Eagle" deviceset="TRACOPOWER-TSR-1" device=""/>
+<part name="VREG" library="VinoRodrigues_Custom_Eagle" deviceset="TRACOPOWER-TSR-1" device=""/>
 <part name="5V-FAN" library="VinoRodrigues_Custom_Eagle" deviceset="JST-PH-2" device=""/>
 <part name="JP3" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1" value="JUMPER-12V-a"/>
 <part name="JP4" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1" value="JUMPER-12V-b"/>
@@ -10573,9 +10573,8 @@ Provided in case
 <instance part="U$10" gate="G$1" x="271.78" y="7.62" smashed="yes"/>
 <instance part="U$11" gate="G$1" x="276.86" y="7.62" smashed="yes"/>
 <instance part="U$12" gate="G$1" x="281.94" y="7.62" smashed="yes"/>
-<instance part="U$2" gate="G$1" x="73.66" y="88.9" smashed="yes">
+<instance part="VREG" gate="G$1" x="73.66" y="88.9" smashed="yes">
 <attribute name="NAME" x="76.2" y="81.28" size="1.778" layer="95"/>
-<attribute name="VALUE" x="76.2" y="78.74" size="1.778" layer="96"/>
 </instance>
 <instance part="5V-FAN" gate="G$1" x="368.3" y="127" smashed="yes" rot="R180">
 <attribute name="VALUE" x="370.84" y="132.08" size="1.778" layer="96" font="vector" rot="R180"/>
@@ -10667,7 +10666,7 @@ Provided in case
 <pinref part="SUPPLY20" gate="G$1" pin="12V"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="91.44" x2="48.26" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="IN"/>
+<pinref part="VREG" gate="G$1" pin="IN"/>
 <wire x1="48.26" y1="88.9" x2="48.26" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="88.9" x2="48.26" y2="88.9" width="0.1524" layer="91"/>
 <junction x="48.26" y="88.9"/>
@@ -10701,7 +10700,7 @@ Provided in case
 <pinref part="SUPPLY17" gate="G$1" pin="5V"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="91.44" x2="106.68" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="OUT"/>
+<pinref part="VREG" gate="G$1" pin="OUT"/>
 <wire x1="106.68" y1="88.9" x2="106.68" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="88.9" x2="106.68" y2="88.9" width="0.1524" layer="91"/>
 <junction x="106.68" y="88.9"/>
@@ -10749,7 +10748,7 @@ Provided in case
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="GND"/>
+<pinref part="VREG" gate="G$1" pin="GND"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="73.66" y1="81.28" x2="73.66" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -10921,13 +10920,6 @@ Provided in case
 <wire x1="111.76" y1="205.74" x2="114.3" y2="205.74" width="0.1524" layer="91"/>
 <label x="114.3" y="205.74" size="1.778" layer="95" xref="yes"/>
 </segment>
-<segment>
-<pinref part="J4" gate="G$1" pin="6"/>
-<wire x1="38.1" y1="203.2" x2="55.88" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="203.2" x2="55.88" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="205.74" x2="58.42" y2="205.74" width="0.1524" layer="91"/>
-<label x="58.42" y="205.74" size="1.778" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -11049,6 +11041,15 @@ Provided in case
 <wire x1="317.5" y1="129.54" x2="317.5" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="134.62" x2="314.96" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="132.08" x2="317.5" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ALERT" class="0">
+<segment>
+<pinref part="J4" gate="G$1" pin="6"/>
+<wire x1="38.1" y1="203.2" x2="55.88" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="203.2" x2="55.88" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="205.74" x2="58.42" y2="205.74" width="0.1524" layer="91"/>
+<label x="58.42" y="205.74" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
