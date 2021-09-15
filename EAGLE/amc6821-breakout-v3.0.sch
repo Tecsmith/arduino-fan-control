@@ -12365,73 +12365,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <package name="MOUNTINGHOLE_3.0_NPH">
 <hole x="0" y="0" drill="3"/>
 </package>
-<package name="FIDUCIAL-1X2.5">
-<circle x="0" y="0" radius="1.1" width="1.2" layer="29"/>
-<circle x="0" y="0" radius="1.1" width="1.2" layer="39"/>
-<circle x="0" y="0" radius="1.1" width="1.2" layer="41"/>
-<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
-<text x="-0.508" y="-1.016" size="0.4064" layer="25">1mm</text>
-</package>
-<package name="PASS-ROUND">
-<description>&lt;b&gt;FIDUCIAL MARKER&lt;/b&gt;&lt;p&gt;
-round, layers 1 + 16 + 21 + 39 + 49</description>
-<wire x1="0" y1="0.508" x2="0.508" y2="0" width="1.4224" layer="49" curve="-90" cap="flat"/>
-<wire x1="-0.508" y1="0" x2="0" y2="-0.508" width="1.4224" layer="49" curve="90" cap="flat"/>
-<wire x1="0" y1="0.508" x2="0.508" y2="0" width="1.4224" layer="49" curve="-90" cap="flat"/>
-<wire x1="-0.508" y1="0" x2="0" y2="-0.508" width="1.4224" layer="49" curve="90" cap="flat"/>
-<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="49"/>
-<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.1524" layer="49"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-1.27" width="0.1524" layer="49"/>
-<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.1524" layer="49"/>
-<wire x1="-2.54" y1="0" x2="-1.524" y2="0" width="0.1524" layer="1"/>
-<wire x1="0" y1="2.54" x2="0" y2="1.524" width="0.1524" layer="1"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-1.524" width="0.1524" layer="1"/>
-<wire x1="2.54" y1="0" x2="1.524" y2="0" width="0.1524" layer="1"/>
-<wire x1="-2.54" y1="0" x2="-1.524" y2="0" width="0.1524" layer="16"/>
-<wire x1="0" y1="2.54" x2="0" y2="1.524" width="0.1524" layer="16"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-1.524" width="0.1524" layer="16"/>
-<wire x1="2.54" y1="0" x2="1.524" y2="0" width="0.1524" layer="16"/>
-<wire x1="0.0254" y1="0.5842" x2="0.5842" y2="0.0254" width="1.1176" layer="16" curve="-90" cap="flat"/>
-<wire x1="0.0254" y1="0.5842" x2="0.5842" y2="0.0254" width="1.1176" layer="1" curve="-90" cap="flat"/>
-<wire x1="-0.5842" y1="-0.0254" x2="-0.0254" y2="-0.5842" width="1.1176" layer="16" curve="90" cap="flat"/>
-<wire x1="-0.5842" y1="-0.0254" x2="-0.0254" y2="-0.5842" width="1.1176" layer="1" curve="90" cap="flat"/>
-<circle x="0" y="0" radius="1.27" width="0.1524" layer="49"/>
-<circle x="0" y="0" radius="1.27" width="0.1524" layer="49"/>
-<circle x="0" y="0" radius="1.27" width="0.1524" layer="1"/>
-<circle x="0" y="0" radius="1.27" width="0.1524" layer="16"/>
-<circle x="0" y="0" radius="2.54" width="0" layer="29"/>
-<circle x="0" y="0" radius="2.54" width="0" layer="30"/>
-</package>
-<package name="FIDUCIAL_1MM">
-<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
-<wire x1="-0.75" y1="0" x2="0" y2="0.75" width="0.5" layer="29" curve="-90"/>
-<wire x1="0" y1="0.75" x2="0.75" y2="0" width="0.5" layer="29" curve="-90"/>
-<wire x1="0.75" y1="0" x2="0" y2="-0.75" width="0.5" layer="29" curve="-90"/>
-<wire x1="0" y1="-0.75" x2="-0.75" y2="0" width="0.5" layer="29" curve="-90"/>
-<wire x1="-0.75" y1="0" x2="0" y2="0.75" width="0.5" layer="41" curve="-90"/>
-<wire x1="0" y1="0.75" x2="0.75" y2="0" width="0.5" layer="41" curve="-90"/>
-<wire x1="0.75" y1="0" x2="0" y2="-0.75" width="0.5" layer="41" curve="-90"/>
-<wire x1="0" y1="-0.75" x2="-0.75" y2="0" width="0.5" layer="41" curve="-90"/>
-<wire x1="-0.75" y1="0" x2="0" y2="0.75" width="0.5" layer="39" curve="-90"/>
-<wire x1="0" y1="0.75" x2="0.75" y2="0" width="0.5" layer="39" curve="-90"/>
-<wire x1="0.75" y1="0" x2="0" y2="-0.75" width="0.5" layer="39" curve="-90"/>
-<wire x1="0" y1="-0.75" x2="-0.75" y2="0" width="0.5" layer="39" curve="-90"/>
-</package>
-<package name="FIDUCIAL_0.5MM">
-<smd name="1" x="0" y="0" dx="0.5" dy="0.5" layer="1" roundness="100" cream="no"/>
-<wire x1="-0.475" y1="0" x2="0" y2="0.475" width="0.25" layer="29" curve="-90"/>
-<wire x1="0" y1="0.475" x2="0.475" y2="-0.025" width="0.25" layer="29" curve="-90"/>
-<wire x1="0.475" y1="-0.025" x2="0" y2="-0.475" width="0.25" layer="29" curve="-90"/>
-<wire x1="0" y1="-0.475" x2="-0.475" y2="0" width="0.25" layer="29" curve="-90"/>
-<wire x1="-0.475" y1="0" x2="0" y2="0.475" width="0.25" layer="41" curve="-90"/>
-<wire x1="0" y1="0.475" x2="0.475" y2="-0.025" width="0.25" layer="41" curve="-90"/>
-<wire x1="0.475" y1="-0.025" x2="0" y2="-0.475" width="0.25" layer="41" curve="-90"/>
-<wire x1="0" y1="-0.475" x2="-0.475" y2="0" width="0.25" layer="41" curve="-90"/>
-<wire x1="-0.475" y1="0" x2="0" y2="0.475" width="0.25" layer="39" curve="-90"/>
-<wire x1="0" y1="0.475" x2="0.475" y2="-0.025" width="0.25" layer="39" curve="-90"/>
-<wire x1="0.475" y1="-0.025" x2="0" y2="-0.475" width="0.25" layer="39" curve="-90"/>
-<wire x1="0" y1="-0.475" x2="-0.475" y2="0" width="0.25" layer="39" curve="-90"/>
-</package>
 <package name="SOT23-5">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; - 5 Pin</description>
 <wire x1="1.4224" y1="0.8104" x2="1.4224" y2="-0.8104" width="0.2032" layer="51"/>
@@ -12459,11 +12392,6 @@ round, layers 1 + 16 + 21 + 39 + 49</description>
 <symbol name="MOUNTINGHOLE">
 <circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
 <circle x="0" y="0" radius="1.905" width="0.254" layer="94"/>
-</symbol>
-<symbol name="FIDUCIAL">
-<wire x1="-0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
-<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
 </symbol>
 <symbol name="VREG_SOT23-5">
 <wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
@@ -12549,41 +12477,6 @@ round, layers 1 + 16 + 21 + 39 + 49</description>
 </technologies>
 </device>
 <device name="3.0_NPH" package="MOUNTINGHOLE_3.0_NPH">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="FIDUCIAL" prefix="FID">
-<description>&lt;b&gt;Fiducial Alignment Points&lt;/b&gt;
-&lt;p&gt;Various fiducial points for machine vision alignment.&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="1X2.5" package="FIDUCIAL-1X2.5">
-<technologies>
-<technology name="">
-<attribute name="BOM" value="EXCLUDE" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="ROUND" package="PASS-ROUND">
-<technologies>
-<technology name="">
-<attribute name="BOM" value="EXCLUDE" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_1MM" package="FIDUCIAL_1MM">
-<technologies>
-<technology name="">
-<attribute name="BOM" value="EXCLUDE" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_0.5MM" package="FIDUCIAL_0.5MM">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -12824,8 +12717,6 @@ round, layers 1 + 16 + 21 + 39 + 49</description>
 <part name="U$1" library="VinoRodrigues_Custom_Eagle" deviceset="TECSMITH-LOGO" device=""/>
 <part name="U$4" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.5"/>
 <part name="U$8" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.5"/>
-<part name="FID3" library="microbuilder" deviceset="FIDUCIAL" device="_1MM"/>
-<part name="FID4" library="microbuilder" deviceset="FIDUCIAL" device="_1MM"/>
 <part name="U$9" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.5"/>
 <part name="U$10" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.5"/>
 <part name="U$5" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.5"/>
@@ -12943,8 +12834,6 @@ round, layers 1 + 16 + 21 + 39 + 49</description>
 <instance part="U$1" gate="G$1" x="345.44" y="33.02" smashed="yes"/>
 <instance part="U$4" gate="G$1" x="259.08" y="7.62" smashed="yes"/>
 <instance part="U$8" gate="G$1" x="274.32" y="7.62" smashed="yes"/>
-<instance part="FID3" gate="G$1" x="254" y="7.62" smashed="yes"/>
-<instance part="FID4" gate="G$1" x="248.92" y="7.62" smashed="yes"/>
 <instance part="U$9" gate="G$1" x="279.4" y="7.62" smashed="yes"/>
 <instance part="U$10" gate="G$1" x="284.48" y="7.62" smashed="yes"/>
 <instance part="U$5" gate="G$1" x="264.16" y="7.62" smashed="yes"/>
@@ -13496,43 +13385,30 @@ round, layers 1 + 16 + 21 + 39 + 49</description>
 </sheet>
 </sheets>
 <errors>
-<approved hash="102,1,15.24,238.76,VCC,3V3,,,,"/>
-<approved hash="102,1,137.16,218.44,VCC_1,5V,,,,"/>
-<approved hash="102,1,144.78,218.44,VCC_2,12V,,,,"/>
-<approved hash="102,1,340.36,243.84,VCC_2,12V,,,,"/>
-<approved hash="102,1,152.4,139.7,VCC,3V3,,,,"/>
-<approved hash="102,1,355.6,205.74,VCC_1,5V,,,,"/>
-<approved hash="102,1,271.78,134.62,VCC,3V3,,,,"/>
-<approved hash="102,1,160.02,185.42,VCC_2,12V,,,,"/>
-<approved hash="102,1,193.04,185.42,VCC_1,5V,,,,"/>
-<approved hash="102,1,160.02,236.22,VCC_1,5V,,,,"/>
-<approved hash="102,1,185.42,236.22,VCC,3V3,,,,"/>
-<approved hash="102,1,73.66,121.92,VCC,3V3,,,,"/>
-<approved hash="102,1,27.94,58.42,VCC,3V3,,,,"/>
-<approved hash="102,1,248.92,236.22,VCC,3V3,,,,"/>
-<approved hash="102,1,73.66,106.68,VCC,3V3,,,,"/>
-<approved hash="102,1,345.44,243.84,VCC_1,5V,,,,"/>
-<approved hash="104,1,187.96,114.3,U1,VDD,3V3,,,"/>
-<approved hash="104,1,353.06,233.68,J5,1:GND,FAN-GND,,,"/>
-<approved hash="104,1,353.06,231.14,J5,2:+12VDC,VDD,,,"/>
-<approved hash="104,1,68.58,224.79,J3,1,GND,,,"/>
-<approved hash="104,1,71.12,224.79,J3,2,3V3,,,"/>
-<approved hash="104,1,27.94,224.79,J1,1,GND,,,"/>
-<approved hash="104,1,30.48,224.79,J1,2,3V3,,,"/>
-<approved hash="104,1,48.26,224.79,J2,1,GND,,,"/>
-<approved hash="104,1,50.8,224.79,J2,2,3V3,,,"/>
-<approved hash="104,1,68.58,121.92,U2,VCC,3V3,,,"/>
-<approved hash="104,1,68.58,106.68,U3,VCC,3V3,,,"/>
-<approved hash="113,1,73.6956,220.303,J3,,,,,"/>
-<approved hash="113,1,129.057,212.253,J4,,,,,"/>
-<approved hash="113,1,249.545,203.005,J13,,,,,"/>
-<approved hash="113,1,249.545,194.115,J14,,,,,"/>
-<approved hash="113,1,340.36,120.701,JP8,,,,,"/>
-<approved hash="113,1,249.545,218.245,J11,,,,,"/>
-<approved hash="113,1,50.1227,157.317,J9,,,,,"/>
-<approved hash="113,1,249.545,210.625,J12,,,,,"/>
-<approved hash="113,1,193.571,130.071,FRAME2,,,,,"/>
-<approved hash="113,1,330.2,230.452,JP9,,,,,"/>
+<approved hash="102,1,76.2,215.9,VCC,3V3,,,,"/>
+<approved hash="102,1,228.6,71.12,VCC,3V3,,,,"/>
+<approved hash="102,1,254,165.1,VCC,3V3,,,,"/>
+<approved hash="102,1,157.48,63.5,VCC_1,5V,,,,"/>
+<approved hash="102,1,193.04,63.5,VCC,3V3,,,,"/>
+<approved hash="102,1,58.42,119.38,VCC,3V3,,,,"/>
+<approved hash="102,1,187.96,60.96,OUT,3V3,,,,"/>
+<approved hash="102,1,134.62,139.7,VCC,3V3,,,,"/>
+<approved hash="104,1,170.18,144.78,U1,VDD,3V3,,,"/>
+<approved hash="104,1,167.64,60.96,U3,IN,5V,,,"/>
+<approved hash="104,1,96.52,203.2,J8,1,GND,,,"/>
+<approved hash="104,1,93.98,203.2,J8,2,3V3,,,"/>
+<approved hash="103,1,86.36,200.66,J8,NC2,GND,,,"/>
+<approved hash="103,1,99.06,200.66,J8,NC1,GND,,,"/>
+<approved hash="104,1,116.84,203.2,J9,1,GND,,,"/>
+<approved hash="104,1,114.3,203.2,J9,2,3V3,,,"/>
+<approved hash="103,1,106.68,200.66,J9,NC2,GND,,,"/>
+<approved hash="103,1,119.38,200.66,J9,NC1,GND,,,"/>
+<approved hash="113,1,193.571,130.071,FRAME1,,,,,"/>
+<approved hash="113,1,296.503,110.622,J3,,,,,"/>
+<approved hash="113,1,296.503,71.2521,J4,,,,,"/>
+<approved hash="113,1,296.503,95.3821,J5,,,,,"/>
+<approved hash="113,1,296.503,87.7621,J6,,,,,"/>
+<approved hash="113,1,278.723,211.16,J7,,,,,"/>
 </errors>
 </schematic>
 </drawing>
