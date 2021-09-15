@@ -855,21 +855,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <circle x="0" y="0" radius="1" width="2.032" layer="42"/>
 <pad name="P$1" x="0" y="0" drill="2.5" diameter="3.2"/>
 </package>
-<package name="FIDUCIAL_1MM">
-<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
-<wire x1="-0.75" y1="0" x2="0" y2="0.75" width="0.5" layer="29" curve="-90"/>
-<wire x1="0" y1="0.75" x2="0.75" y2="0" width="0.5" layer="29" curve="-90"/>
-<wire x1="0.75" y1="0" x2="0" y2="-0.75" width="0.5" layer="29" curve="-90"/>
-<wire x1="0" y1="-0.75" x2="-0.75" y2="0" width="0.5" layer="29" curve="-90"/>
-<wire x1="-0.75" y1="0" x2="0" y2="0.75" width="0.5" layer="41" curve="-90"/>
-<wire x1="0" y1="0.75" x2="0.75" y2="0" width="0.5" layer="41" curve="-90"/>
-<wire x1="0.75" y1="0" x2="0" y2="-0.75" width="0.5" layer="41" curve="-90"/>
-<wire x1="0" y1="-0.75" x2="-0.75" y2="0" width="0.5" layer="41" curve="-90"/>
-<wire x1="-0.75" y1="0" x2="0" y2="0.75" width="0.5" layer="39" curve="-90"/>
-<wire x1="0" y1="0.75" x2="0.75" y2="0" width="0.5" layer="39" curve="-90"/>
-<wire x1="0.75" y1="0" x2="0" y2="-0.75" width="0.5" layer="39" curve="-90"/>
-<wire x1="0" y1="-0.75" x2="-0.75" y2="0" width="0.5" layer="39" curve="-90"/>
-</package>
 </packages>
 </library>
 <library name="SparkFun-Jumpers">
@@ -1188,12 +1173,6 @@ design rules under a new name.</description>
 </element>
 <element name="U$7" library="microbuilder" package="MOUNTINGHOLE_2.5_PLATED" value="MOUNTINGHOLE2.5" x="22.86" y="22.86" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="17.78" y="17.78" size="1.778" layer="27" display="off"/>
-</element>
-<element name="FID3" library="microbuilder" package="FIDUCIAL_1MM" value="FIDUCIAL_1MM" x="6.35" y="2.54" smashed="yes">
-<attribute name="BOM" value="EXCLUDE" x="6.35" y="2.54" size="1.778" layer="27" display="off"/>
-</element>
-<element name="FID4" library="microbuilder" package="FIDUCIAL_1MM" value="FIDUCIAL_1MM" x="35.56" y="22.86" smashed="yes">
-<attribute name="BOM" value="EXCLUDE" x="33.02" y="20.32" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U$8" library="microbuilder" package="MOUNTINGHOLE_2.5_PLATED" value="MOUNTINGHOLE2.5" x="43.18" y="2.54" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="43.18" y="-7.62" size="1.778" layer="27" display="off"/>
