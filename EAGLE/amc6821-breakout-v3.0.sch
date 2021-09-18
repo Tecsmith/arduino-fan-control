@@ -13067,13 +13067,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="96.52" y="210.82"/>
 <pinref part="J9" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="203.2" x2="116.84" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="210.82" x2="119.38" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="J9" gate="G$1" pin="NC1"/>
-<wire x1="119.38" y1="210.82" x2="119.38" y2="200.66" width="0.1524" layer="91"/>
-<junction x="116.84" y="210.82"/>
 <pinref part="J9" gate="G$1" pin="NC2"/>
 <wire x1="106.68" y1="200.66" x2="106.68" y2="210.82" width="0.1524" layer="91"/>
 <junction x="106.68" y="210.82"/>
+<wire x1="116.84" y1="210.82" x2="119.38" y2="210.82" width="0.1524" layer="91"/>
+<junction x="116.84" y="210.82"/>
+<pinref part="J9" gate="G$1" pin="NC1"/>
+<wire x1="119.38" y1="210.82" x2="119.38" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
